@@ -1,0 +1,78 @@
+/* Background */
+
+.stApp {
+    background-image: url('https://i.imgur.com/W3JfuH7.png'); /* Caminho para a sua imagem */
+    background-position: center; /* Centraliza a imagem no fundo */
+    background-repeat: repeat; /* Repetição da imagem */
+}
+
+/* Título */
+h1 {
+    color: #FFFFFF; /* Cor do título */
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; /* Contorno preto mais grosso */
+}
+
+/* Estilo para DataFrame */
+div.stDataFrame {
+    border: 2px solid #ffffff; /* Borda ao redor da tabela */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    overflow: hidden; /* Para que as bordas arredondadas funcionem */
+}
+
+/* Estilo para Selectbox */
+.stSelectbox {
+    border: 1px solid #ffffff; /* Borda ao redor do selectbox */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+    background-color: #ffffff; /* Cor de fundo do selectbox */
+    color: #000; /* Cor do texto */
+    padding: 1px; /* Espaçamento interno */
+}
+
+/* Estilo para as Tabs */
+div[data-testid="stTabs"] > div {
+    background-color: #000000; /* Fundo das tabs */
+    border: 2px solid #ffffff; /* Borda das tabs */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+div[data-testid="stTab"] > div {
+    background-color: #000000; /* Fundo dentro de cada tab */
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* Espaçamento TABS */
+
+div[data-testid="stTabs"] button {
+    margin: 0 2.7%; /* Espaçamento entre os botões das tabs */
+}
+
+
+
+/* Estilo botões de download */
+.stDownloadButton > button {
+    border: 2px solid #ffffff; /* Borda do botão */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+    background-color: #000000; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    display: inline-block; /* Para manter o botão em linha */
+    margin-right: 10px; /* Espaçamento entre botões, se houver */
+}
+
+.center-buttons {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 10px; /* Espaço entre os botões */
+}
